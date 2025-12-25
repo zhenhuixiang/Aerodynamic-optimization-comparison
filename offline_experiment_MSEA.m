@@ -24,15 +24,15 @@ std_samp    = std(clfittest);
 out1        = [best_samp,worst_samp,mean_samp,median_samp,std_samp];
 save(strcat('result/','MSEA',' runs=',num2str(runs)));
 
-% ploting and graphing
-fprintf(' Original   Cl= %f \n Optimized  Cl= %f \n',cloriginal,clfittest)
-figure
-graphCl(fittest,Npanel,uinf,5,'k');
-graphCl(p0,Npanel,uinf,5,'r');
-legend('Optimized','original')
-xlabel('AOA')
-ylabel('Cl')
-line([-100 100],[0,0],'color','k','LineWidth',1)
-line([0,0],[-10 10],'color','k','LineWidth',1)
-title('Coeffecient of lift vs. Angle of attack')
-grid on
+% % ploting and graphing
+% fprintf(' Original   Cl= %f \n Optimized  Cl= %f \n',cloriginal,clfittest)
+% figure
+% graphCl(fittest,Npanel,uinf,5,'k');
+% graphCl(p0,Npanel,uinf,5,'r');
+% legend('Optimized','original')
+% xlabel('AOA')
+% ylabel('Cl')
+% line([-100 100],[0,0],'color','k','LineWidth',1)
+% line([0,0],[-10 10],'color','k','LineWidth',1)
+% title('Coeffecient of lift vs. Angle of attack')
+% grid on

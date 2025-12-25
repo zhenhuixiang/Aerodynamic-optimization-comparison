@@ -30,7 +30,7 @@ for j = 1: length(funcArr)
     std_samp    = std(gsamp1(:,end));
     out1        = [best_samp,worst_samp,mean_samp,median_samp,std_samp];
     gsamp1_ave  = mean(gsamp1,1);
-    gsamp1_log  = log10(gsamp1_ave);   %这错了，用log10()才对呀
+    gsamp1_log  = log10(gsamp1_ave);   
     gsamplog    = log10(gsamp1);  % for ackley function
     save(strcat('result/',num2str(500), '_', fname,' runs=', num2str(runs)));
 
